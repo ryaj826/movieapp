@@ -1,0 +1,141 @@
+/* General body styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #f0f0f0;
+  background-color: #121212; /* Dark background color */
+}
+
+/* Container for the entire app */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Search bar styling */
+.search-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(90deg, #333, #555); /* Dark gradient background */
+  border-bottom: 1px solid #444;
+}
+
+.logo {
+  height: 50px; /* Adjust as needed */
+  margin-right: 20px; /* Space between logo and search input */
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #666;
+  border-radius: 5px;
+  background-color: #222;
+  color: #fff;
+}
+
+/* Main content area styling */
+.main-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Left navigation styling */
+.left-nav-container {
+  width: 250px;
+  background-color: #1a1a1a;
+  padding: 10px;
+  border-right: 1px solid #444;
+}
+
+/* Main content styling */
+.main-content-container {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+h1 {
+  color: #FFFFF; /* Neon pink color */
+}
+
+.add-movie-container {
+  display: flex;
+  gap: 10px;
+}
+
+/* Add movie input styling */
+.new-movie-input {
+  width: calc(96% - 80px); /* Adjust width to account for button */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #666;
+  border-radius: 5px;
+  background-color: #222;
+  color: #fff;
+  gap: 10px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Movie list styling */
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 5px;
+}
+
+.movie-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #444;
+  background-color: #1e1e1e;
+}
+
+.movie-list .watched {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.movie-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.movie-actions button {
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.movie-actions button:nth-of-type(1) {
+  background-color: #00e676; /* Neon green color for toggle watch status */
+  color: #000;
+}
+
+.movie-actions button:nth-of-type(1):hover {
+  background-color: #00c853;
+}
+
+.movie-actions button:nth-of-type(2) {
+  background-color: #ff1744; /* Neon red color for delete */
+}
+
+.movie-actions button:nth-of-type(2):hover {
+  background-color: #d50032;
+}

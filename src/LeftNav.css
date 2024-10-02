@@ -1,0 +1,76 @@
+.left-nav-container {
+    width: 200px;
+    background-color: #2c2c34;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  .left-nav-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .genre-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .genre-item {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .genre-item:hover {
+    background-color: #3e3e47;
+    border-radius: 4px;
+  }
+  
+  .leftnav {
+    left: 0;
+  }
+  
+  .leftnav h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .leftnav ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .leftnav-item {
+    margin-bottom: 30px; /* Space between each genre */
+    list-style-type: none; /* Remove bullets */
+  }
+  
+  .leftnav-item span {
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Full width of the button */
+    height: 100px;
+    padding: 1px;
+  }
+  
+  .leftnav-item span:hover {
+    color: #ffb100; /* Highlight effect on hover */
+  }
+
+  
